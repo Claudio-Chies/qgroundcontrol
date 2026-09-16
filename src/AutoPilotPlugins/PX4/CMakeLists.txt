@@ -25,6 +25,8 @@ target_sources(${CMAKE_PROJECT_NAME}
         PX4AutoPilotPlugin.h
         PX4FlightBehavior.cc
         PX4FlightBehavior.h
+        PX4FlightModeButtonsController.cc
+        PX4FlightModeButtonsController.h
         PX4RadioComponent.cc
         PX4RadioComponent.h
         PX4SimpleFlightModesController.cc
