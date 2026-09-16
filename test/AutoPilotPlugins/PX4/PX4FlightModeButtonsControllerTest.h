@@ -23,4 +23,5 @@ private:
     void _setMask(int mask);
     void _setModeSlots(const QList<int> &modes);
     QList<int> _modeSlots() const;
+    void _waitForWritesToReachVehicle();
 };
