@@ -8,9 +8,12 @@ target_sources(${CMAKE_PROJECT_NAME}
         APM/APMFreshFlashParamsTest.h
         PX4/AirframeComponentAirframesTest.cc
         PX4/AirframeComponentAirframesTest.h
+        PX4/PX4FlightModeButtonsControllerTest.cc
+        PX4/PX4FlightModeButtonsControllerTest.h
 )
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/PX4)
 
 add_qgc_test(AirframeComponentAirframesTest LABELS Unit)
 add_qgc_test(APMFreshFlashParamsTest LABELS Integration Vehicle TIMEOUT ${QGC_TEST_TIMEOUT_EXTENDED})
+add_qgc_test(PX4FlightModeButtonsControllerTest LABELS Integration Vehicle)
